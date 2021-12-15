@@ -37,7 +37,8 @@ while true {
             aStack.showStack()
         } else if userInput!.starts(with: allowedCommands[3]) {
             do {
-                try print("The element at the top of the stack is : \(aStack.peek())")
+                try print("The element at the top of the stack is :"
+                          + " \(aStack.peek())")
             } catch {
                 print("The stack is empty.")
             }
